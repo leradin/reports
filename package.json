@@ -1,0 +1,26 @@
+{
+  "name": "reports",
+  "version": "1.0.0",
+  "description": "report for ADA (operation simulator)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js bundle.js",
+    "build:local": "webpack",
+    "build:external": "webpack --config ./external/webpack.config.js"
+  },
+  "keywords": [
+    "reports",
+    "ADA"
+  ],
+  "author": "Lenin Vladimir Ramirez Diaz",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14"
+  }
+}
