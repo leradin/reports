@@ -4,10 +4,16 @@ const mongoose = require('mongoose')
 const Schema  = mongoose.Schema
 
 const CommentMap = Schema({
-	source:Number,
+	date : Date,
+	course: Number,
+	speed:Number,
+	lat_lon:String,
+	source:String,
+	sourceName: String,
 	target:Number,
-	comment:String,
-	exerciseId:Number
+	targetName: String,
+	commentary:String,
+	idExercise:Number
 },{ collection: 'comments-map' });
 
 
